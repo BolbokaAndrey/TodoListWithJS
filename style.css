@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: inherit;
+    background-size: cover;
+}
+
+input {
+    height: 2em;
+    border-radius: 15px;
+
+}
+
+input.active {
+    display: inline-block;
+}
+
+.todo {
+    margin-top: 50px;
+    width: 300px;
+    border: 3px solid #000000;
+
+}
+
+.todo__top {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    position: relative;
+}
+
+.todo__add-task-input {
+    position: absolute;
+    top: 13px;
+    left: 40px;
+}
+
+.todo__search-input {
+    position: absolute;
+    top: 13px;
+    right: 40px;
+}
+
+.todo__add-task-btn {
+    background-image: url("images/add.svg");
+}
+
+.todo__search-btn {
+    background-image: url("images/search.svg");
+}
+
+.todo__list {
+    padding: 10px;
+}
+
+.task {
+    display: grid;
+    grid-template-columns: 30px auto 30px 30px;
+    column-gap: 5px;
+}
+
+.task__check-btn {
+    border: 1px solid #000000;
+    border-radius: 15px;
+}
+
+.task__check-btn.done {
+    background-image: url("images/done.svg");
+
+}
+
+.task__text {
+    display: inline-block;
+    width: auto;
+    border-bottom: 1px solid #000000;
+}
+
+.task__edit-btn {
+    background-image: url("images/edit.svg");
+}
+
+.task__delete-btn {
+    background-image: url("images/delete.svg");
+}
