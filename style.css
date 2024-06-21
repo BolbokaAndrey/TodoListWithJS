@@ -4,13 +4,13 @@
 
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto 300px auto;
 }
 
 button {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border: none;
     background-color: inherit;
     background-size: cover;
@@ -19,7 +19,7 @@ button {
 input {
     height: 2em;
     border-radius: 15px;
-
+    display: none;
 }
 
 input.active {
@@ -28,7 +28,7 @@ input.active {
 
 .todo {
     margin-top: 50px;
-    width: 300px;
+    grid-column: 2/3;
     border: 3px solid #000000;
 
 }
@@ -44,13 +44,13 @@ input.active {
 
 .todo__add-task-input {
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: 40px;
 }
 
 .todo__search-input {
     position: absolute;
-    top: 13px;
+    top: 10px;
     right: 40px;
 }
 
@@ -61,6 +61,7 @@ input.active {
 .todo__search-btn {
     background-image: url("images/search.svg");
 }
+
 
 .todo__list {
     padding: 10px;
