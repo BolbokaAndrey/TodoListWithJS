@@ -71,6 +71,13 @@ input.active {
     display: grid;
     grid-template-columns: 30px auto 30px 30px;
     column-gap: 5px;
+    align-items: center;
+    height: 2em;
+}
+
+.task.not-search {
+    position: absolute;
+    visibility: hidden;
 }
 
 .task__check-btn {
@@ -80,14 +87,25 @@ input.active {
 
 .task__check-btn.done {
     background-image: url("images/done.svg");
-
 }
 
 .task__text {
     display: inline-block;
-    width: auto;
+    width: 100%;
+    overflow: hidden;
     border-bottom: 1px solid #000000;
 }
+
+.task__check-btn.done ~ .task__text {
+    text-decoration: line-through;
+    color: #9a9a9a;
+}
+
+.task__edit-input {
+    display: inline-block;
+    width: 100%;
+}
+
 
 .task__edit-btn {
     background-image: url("images/edit.svg");

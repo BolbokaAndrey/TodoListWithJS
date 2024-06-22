@@ -13,23 +13,17 @@
         <div class="todo__top">
             <div class="todo__add-task">
                 <button class="todo__add-task-btn" id="add-task-btn"></button>
+                <label for="add-task-input"></label>
                 <input type="text" name="add-task" class="todo__add-task-input active" id="add-task-input">
             </div>
             <div class="todo__search">
+                <label for="search-input"></label>
                 <input type="search" name="q" class="todo__search-input" id="search-input">
                 <button class="todo__search-btn" id="search-btn"></button>
             </div>
 
         </div>
-        <div class="todo__list">
-            <div class="todo__task task">
-                <button class="task__check-btn done"></button>
-                <div class="task__text"></div>
-                <button class="task__edit-btn"></button>
-                <button class="task__delete-btn"></button>
-            </div>
-
-        </div>
+        <div class="todo__list" id="tasks-list"></div>
     </div>
     <script src="todo-list.js"></script>
 </body>
